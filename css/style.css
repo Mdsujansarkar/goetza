@@ -1,12 +1,12 @@
 /*
   Theme Name: Name - Multipurpose HTML Template
-  Author: 
+  Author:
   Support: admin@gmail.com
   Description: Creative  HTML5 template.
   Version: 1.0
 */
 
-/* CSS Index 
+/* CSS Index
 -----------------------------------
 1. Theme default css
 2. header
@@ -17,7 +17,7 @@
 7. team
 8. video-area
 9. counter
-10. footer 
+10. footer
 */
 
 
@@ -360,6 +360,8 @@ label {
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.4s;
+	background:#FFFFFF;
+  z-index: 9;
 }
 .our-menu ul li:hover ul {
     top: 80%;
@@ -430,7 +432,7 @@ label {
 	width:30px;
 	text-align: center;
 	line-height: 28px;
-	font-size: 12px;	
+	font-size: 12px;
 }
 .header-icon span {
 	background-image: url('../img/icon_cart.png');
@@ -483,4 +485,275 @@ label {
 	padding: 10px 88px;
 	background: #C38748;
 	color:#FFFFFF;
+}
+.test {
+	display: none;
+}
+.hero-section {
+  background-image: url('../img/slider.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color:rgba(0, 0, 0, 1);
+  opacity: 0.5
+}
+.main-heading-slider {
+	padding: 12%;
+	text-align: center;
+}
+.main-heading-slider h1 {
+  opacity: 1;
+  font-size: 4em;
+  color: green;
+  font-weight: 700;
+}
+.main-heading-slider p {
+  opacity: 1;
+  font-size: 1em;
+  color: #006600;
+  font-weight: 700;
+  line-height: 26px;
+}
+.icon-link i {
+	float: left;
+	padding-top: 20px;
+	font-size: 2em;
+	padding-right: 10px;
+  color: #C38749;
+}
+.services {
+	margin-left: 20px;
+	padding-top: 10px;
+}
+.offer-section {
+  border-bottom:1px solid #C38749;
+}
+/* Product wrape */
+.cart-services-heading h2 {
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+  padding-bottom: 10px;
+}
+.product-wrape {}
+.product-image {
+  position: relative;
+  display: inline-block;
+}
+.product-image > a {
+  display: block;
+  position: relative;
+}
+.product-image > a::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	transition: 0.3s;
+	background: green;
+	width: 100%;
+	opacity: 0;
+}
+.new {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(90deg);
+	background: green;
+	color: #ffffff;
+	padding: 3px 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.new.sale {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  transform: rotate(90deg);
+  background: #C38749;
+  color: #ffffff;
+  padding: 3px 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product-image:hover .product-image > a::before {
+  opacity: 0.5;
+  z-index: 5;
+}
+  .cart-action {
+  	position: absolute;
+  	width: 100%;
+  	text-align: center;
+  	bottom: 0;
+  	background-color: #484848;
+  	padding: 15px 0;
+    transform: scale(0);
+    z-index: 6;
+
+  }
+  img.secoundry {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	transform: scaleX(0);
+  }
+  .product-image:hover img.secoundry {
+    transform: scaleX(1);
+    transition: 0.2s;
+  }
+  .product-image:hover .cart-action {
+    transform: scale(1);
+    transition: 1s;
+  }
+  .cart-action a {
+  	border: 1px solid #c38749;
+  	color: #c38749;
+  	height: 40px;
+  	width: 40px;
+  	line-height: 40px;
+  	display: inline-block;
+  }
+ .cart-action a:hover {
+  border: 1px solid #c38749;
+  background: #c38749;
+  color: #FFFFFF;
+ }
+ .product-content h3 {
+ 	font-size: 13px;
+ 	font-weight: 600;
+ }
+ .product-rating {
+   float: left;
+ }
+ .product-rating a {}
+ .product-price {
+   float: right;
+ }
+ .sell-on {
+   font-size: 16px;
+   color:#c38748;
+   font-weight: 600;
+ }
+ .sell-off {
+   font-size: 14px;
+   color:#838383;
+   font-weight: 400;
+   text-decoration: line-through;
+ }
+ .product-rating a:hover i {
+   color:#838383;
+ }
+ .owl-carousel .owl-stage-outer {
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: translate3d(0,0,0);
+	padding-top: 20px;
+}
+.promosition-section {
+  background-image: url('../img/deal-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.white-bg {
+	background-color: #ffffff;
+	overflow: hidden;
+  margin-top:50px;
+}
+.products-promo .product-image {
+	float: left;
+	width: 45%;
+  overflow: hidden;
+}
+.products-promo .product-content {
+  width:55%;
+  float: left;
+  padding-left: 15px;
+}
+.products-promo .product-price-rating {
+  border-bottom: 1px solid #EBEBEB;
+}
+.products-promo .product-rating {
+	float: none;
+	padding-bottom: 10px;
+}
+.products-promo .product-content h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 18px;
+  margin-top:20px;
+}
+.products-promo .product-price {
+  float: left;
+}
+.products-promo .contant-promo p {
+	padding-top: 40px;
+}
+.products-promo .cart-action-mod {
+	width: 100%;
+	bottom: 0;
+	padding: 15px 0;
+  position: absolute;
+}
+.hea-banner {
+  border-bottom: 1px solid #E5E5E5;
+}
+.hea-banner h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.products-promo .cart-action-mod a {
+	border: 1px solid #C38749;
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	display: inline-block;
+	line-height: 10px;
+	margin-bottom: 20px;
+  color: #C38749;
+}
+.products-promo .cart-action-mod a:hover {
+  background: #C38749;
+  color:#FFFFFF;
+}
+.imge-down {
+	margin-top: 28px;
+}
+.banner-image a::before {
+	background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+	bottom: 15px;
+	content: "";
+	left: 15px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	transform: scale(0);
+	transition: all 300ms ease 0s;
+}
+.banner-image a:hover::before {
+	transform: scale(1);
+}
+.image-part {
+	float: left;
+	margin-right: 20px;
+}
+.feature-whole-contant {
+  overflow: hidden;
+  margin-top: 15px;
+}
+/* Main Footer */
+.main-footer {
+  background-color: #2F2F2F;
+}
+.footer-heading h5 {
+  font-size: 16px;
+  color: #c38749;
+  text-transform: uppercase;
+}
+.footer-heading ul li a {
+  font-size: 13px;
+  color: #FFFFFF;
 }

@@ -15,6 +15,11 @@ $('.header-icon').on('click',function(){
 $('.test').slideToggle();
 });
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    items:4,
+    nav:true,
 
+});
 
-})(jQuery);	
+})(jQuery);
